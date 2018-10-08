@@ -12,7 +12,7 @@ public class Tests {
 
     private Class<?> getTestedClass() {
         try {
-            return Class.forName("com.example.task01.TimeSpan");
+            return Class.forName("com.example.task02.TimeSpan");
         } catch (ClassNotFoundException e) {
             throw new AssertionError("Не найден класс TimeSpan");
         }
