@@ -14,8 +14,8 @@ public class TimeSpan {
 
     public TimeSpan(int hour, int minute, int second) {
         this.hour = hour;
-        this.minute = minute;
-        this.second = second;
+        this.minute = minute % 60;
+        this.second = second % 60;
     }
 
     public void add(TimeSpan time) {
@@ -70,10 +70,10 @@ public class TimeSpan {
     }
 
     public void setMinutes(int minutes) {
-        this.minute = minutes;
+        this.minute = minutes % 60;
     }
 
     public void setSeconds(int seconds) {
-        this.second = seconds;
+        this.second = seconds % 60;
     }
 }
